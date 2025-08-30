@@ -1,0 +1,77 @@
+.tree-wrap {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+  padding-right: 600px;
+}
+
+h1 {
+  margin-top: 30px;
+}
+
+.rule svg {
+  margin-top: 25px;
+}
+
+.rule {
+  padding: 20px;
+  width: 600px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border-radius: 16px;
+  border: 3px solid #cacaca;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+.rule:hover {
+  width: 635px;
+  height: 95px;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+#legal-disclaimer {
+  width: 800px;
+  height: 120px;
+}
+
+#legal-disclaimer:hover {
+  width: 835px;
+  height: 150px;
+}
+
+#contact-us {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: space-around;
+}
+
+.contact {
+  height: 50px;
+  width: 350px;
+  transform: scale(0.8);
+}
+
+.contact:hover {
+  width: 350px;
+  height: 50px;
+}
+
+#phoneNum {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+#discordJoin {
+  grid-row: 1;
+  grid-column: 3;
+  width: 250px
+}
+
+#emailAdd {
+  grid-row: 1;
+  grid-column: 2;
+  width: 450px;
+}

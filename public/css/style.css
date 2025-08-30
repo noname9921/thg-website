@@ -1,0 +1,13 @@
+* {
+  margin: 0 auto;
+}
+body {
+  font-family: Montserrat;
+  overflow-x: hidden;
+}
+
+.h1-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

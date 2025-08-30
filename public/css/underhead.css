@@ -1,0 +1,53 @@
+.underhead {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-family: montserrat-black, sans-serif;
+}
+
+.text {
+  margin-top: 150px;
+  margin-right: 90px;
+}
+
+#collabGif {
+  transform: scale(0.8);
+  transform-origin: top left;
+  justify-self: center;
+  grid-row: 1 / 4;
+  margin-right: 0px;
+}
+
+#create,
+#play,
+#enjoy {
+  grid-column: 2;
+  font-weight: 900;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #222;
+}
+
+#create {
+  margin-bottom: 5px;
+}
+
+#play {
+  margin-bottom: 5px;
+}
+
+#create,
+#play,
+#enjoy {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#create:hover,
+#play:hover,
+#enjoy:hover {
+  color: #ff6600;
+  transform: translateX(5px);
+}

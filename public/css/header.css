@@ -1,0 +1,48 @@
+header {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 150px;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  padding: 20px;
+  padding-left: 0;
+  padding-top: 30px;
+  min-width: 95vw;
+  min-height: 7.5vh;
+}
+
+.heading {
+  display: inline-block;
+  position: relative;
+}
+
+#inuse {
+  background: linear-gradient(90deg, #8e2de2, #ff6a95);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  position: relative;
+}
+
+#inuse::after, .heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0 !important;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: left;
+}
+
+#inuse:hover::after, .heading:hover::after {
+  transform: scaleX(1);
+}
+
+#inuse::after {
+  background: linear-gradient(90deg, #8e2de2, #ff6a95);
+}

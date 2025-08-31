@@ -1,0 +1,39 @@
+* {
+  font-family: Montserrat;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+form {
+  background-color: #fafeff;
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px black solid;
+}
+
+select, input {
+  height: 40px;
+    padding: 0px;
+    background-color: aliceblue;
+    width: 500px;
+    font-size: 15px;
+}
+
+label, input, button, select {
+  margin: 5px;
+}
+
+label {
+  font-size: 20px;
+}
+
+button {
+  display: block;
+    margin: 20px auto;
+    width: 200px;
+    height: 50px;
+}

@@ -2,9 +2,16 @@ const express = require('express');
 const path = require('path');
 const app = express();
 const dotenv = require('dotenv')
+const __dirname = path.resolve();
 
 dotenv.config()
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, "public"), {
+  setHeaders: (res, filePath) => {
+    if (filePath.endsWith(".css")) {
+      res.setHeader("Content-Type", "text/css");
+    }
+  }
+}));
 app.use(express.json());
 
 const { Client, GatewayIntentBits } = require("discord.js");

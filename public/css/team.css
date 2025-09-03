@@ -1,3 +1,7 @@
+body {
+  font-family: Montserrat;
+}
+
 #team-cards {
   display: grid;
   grid-template-rows: repeat(2, 95px);
